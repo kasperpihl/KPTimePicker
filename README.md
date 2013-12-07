@@ -1,4 +1,4 @@
 KPTimePicker
 ============
 
-Simplistic and easy-to-use timerpicker to replace Apple's
+Simplistic and easy-to-use timepicker to replace Apple's

@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A741ED20183604B6000F9F93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A741ED1F183604B6000F9F93 /* Foundation.framework */; };
+		A741ED22183604B6000F9F93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A741ED21183604B6000F9F93 /* CoreGraphics.framework */; };
+		A741ED24183604B6000F9F93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A741ED23183604B6000F9F93 /* UIKit.framework */; };
+		A741ED2A183604B6000F9F93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A741ED28183604B6000F9F93 /* InfoPlist.strings */; };
+		A741ED2C183604B6000F9F93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A741ED2B183604B6000F9F93 /* main.m */; };
+		A741ED30183604B6000F9F93 /* KPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A741ED2F183604B6000F9F93 /* KPAppDelegate.m */; };
+		A741ED33183604B6000F9F93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A741ED31183604B6000F9F93 /* Main.storyboard */; };
+		A741ED36183604B6000F9F93 /* KPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A741ED35183604B6000F9F93 /* KPViewController.m */; };
+		A741ED38183604B6000F9F93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A741ED37183604B6000F9F93 /* Images.xcassets */; };
+		A741ED5718360532000F9F93 /* KPTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A741ED5618360532000F9F93 /* KPTimePicker.m */; };
+		A741ED5A1836074C000F9F93 /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = A741ED591836074C000F9F93 /* Categories.m */; };
+		A741ED6918361389000F9F93 /* checkmark_icon_white.png in Resources */ = {isa = PBXBuildFile; fileRef = A741ED5C18361389000F9F93 /* checkmark_icon_white.png */; };
+		A741ED6A18361389000F9F93 /* checkmark_icon_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A741ED5D18361389000F9F93 /* checkmark_icon_white@2x.png */; };
+		A741ED6B18361389000F9F93 /* picker_wheel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A741ED5E18361389000F9F93 /* picker_wheel@2x.png */; };
+		A741ED6C18361389000F9F93 /* picker_wheel_ip4.png in Resources */ = {isa = PBXBuildFile; fileRef = A741ED5F18361389000F9F93 /* picker_wheel_ip4.png */; };
+		A741ED6D18361389000F9F93 /* picker_wheel_ip4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A741ED6018361389000F9F93 /* picker_wheel_ip4@2x.png */; };
+		A741ED6E18361389000F9F93 /* round_backarrow_big-high.png in Resources */ = {isa = PBXBuildFile; fileRef = A741ED6118361389000F9F93 /* round_backarrow_big-high.png */; };
+		A741ED6F18361389000F9F93 /* round_backarrow_big-high@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A741ED6218361389000F9F93 /* round_backarrow_big-high@2x.png */; };
+		A741ED7018361389000F9F93 /* round_backarrow_big.png in Resources */ = {isa = PBXBuildFile; fileRef = A741ED6318361389000F9F93 /* round_backarrow_big.png */; };
+		A741ED7118361389000F9F93 /* round_backarrow_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A741ED6418361389000F9F93 /* round_backarrow_big@2x.png */; };
+		A741ED7218361389000F9F93 /* schedule_image_moon-high.png in Resources */ = {isa = PBXBuildFile; fileRef = A741ED6518361389000F9F93 /* schedule_image_moon-high.png */; };
+		A741ED7318361389000F9F93 /* schedule_image_moon-high@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A741ED6618361389000F9F93 /* schedule_image_moon-high@2x.png */; };
+		A741ED7418361389000F9F93 /* schedule_image_sun-high.png in Resources */ = {isa = PBXBuildFile; fileRef = A741ED6718361389000F9F93 /* schedule_image_sun-high.png */; };
+		A741ED7518361389000F9F93 /* schedule_image_sun-high@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A741ED6818361389000F9F93 /* schedule_image_sun-high@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A741ED1C183604B6000F9F93 /* KPTimePickerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPTimePickerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A741ED1F183604B6000F9F93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A741ED21183604B6000F9F93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A741ED23183604B6000F9F93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A741ED27183604B6000F9F93 /* KPTimePickerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KPTimePickerExample-Info.plist"; sourceTree = "<group>"; };
+		A741ED29183604B6000F9F93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A741ED2B183604B6000F9F93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A741ED2D183604B6000F9F93 /* KPTimePickerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KPTimePickerExample-Prefix.pch"; sourceTree = "<group>"; };
+		A741ED2E183604B6000F9F93 /* KPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPAppDelegate.h; sourceTree = "<group>"; };
+		A741ED2F183604B6000F9F93 /* KPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPAppDelegate.m; sourceTree = "<group>"; };
+		A741ED32183604B6000F9F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A741ED34183604B6000F9F93 /* KPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPViewController.h; sourceTree = "<group>"; };
+		A741ED35183604B6000F9F93 /* KPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPViewController.m; sourceTree = "<group>"; };
+		A741ED37183604B6000F9F93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A741ED5518360532000F9F93 /* KPTimePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTimePicker.h; sourceTree = "<group>"; };
+		A741ED5618360532000F9F93 /* KPTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTimePicker.m; sourceTree = "<group>"; };
+		A741ED581836074C000F9F93 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		A741ED591836074C000F9F93 /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categories.m; sourceTree = "<group>"; };
+		A741ED5C18361389000F9F93 /* checkmark_icon_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark_icon_white.png; sourceTree = "<group>"; };
+		A741ED5D18361389000F9F93 /* checkmark_icon_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark_icon_white@2x.png"; sourceTree = "<group>"; };
+		A741ED5E18361389000F9F93 /* picker_wheel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "picker_wheel@2x.png"; sourceTree = "<group>"; };
+		A741ED5F18361389000F9F93 /* picker_wheel_ip4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picker_wheel_ip4.png; sourceTree = "<group>"; };
+		A741ED6018361389000F9F93 /* picker_wheel_ip4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "picker_wheel_ip4@2x.png"; sourceTree = "<group>"; };
+		A741ED6118361389000F9F93 /* round_backarrow_big-high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round_backarrow_big-high.png"; sourceTree = "<group>"; };
+		A741ED6218361389000F9F93 /* round_backarrow_big-high@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round_backarrow_big-high@2x.png"; sourceTree = "<group>"; };
+		A741ED6318361389000F9F93 /* round_backarrow_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round_backarrow_big.png; sourceTree = "<group>"; };
+		A741ED6418361389000F9F93 /* round_backarrow_big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round_backarrow_big@2x.png"; sourceTree = "<group>"; };
+		A741ED6518361389000F9F93 /* schedule_image_moon-high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "schedule_image_moon-high.png"; sourceTree = "<group>"; };
+		A741ED6618361389000F9F93 /* schedule_image_moon-high@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "schedule_image_moon-high@2x.png"; sourceTree = "<group>"; };
+		A741ED6718361389000F9F93 /* schedule_image_sun-high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "schedule_image_sun-high.png"; sourceTree = "<group>"; };
+		A741ED6818361389000F9F93 /* schedule_image_sun-high@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "schedule_image_sun-high@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A741ED19183604B6000F9F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A741ED22183604B6000F9F93 /* CoreGraphics.framework in Frameworks */,
+				A741ED24183604B6000F9F93 /* UIKit.framework in Frameworks */,
+				A741ED20183604B6000F9F93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A741ED13183604B6000F9F93 = {
+			isa = PBXGroup;
+			children = (
+				A741ED25183604B6000F9F93 /* KPTimePickerExample */,
+				A741ED1E183604B6000F9F93 /* Frameworks */,
+				A741ED1D183604B6000F9F93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A741ED1D183604B6000F9F93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A741ED1C183604B6000F9F93 /* KPTimePickerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A741ED1E183604B6000F9F93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A741ED1F183604B6000F9F93 /* Foundation.framework */,
+				A741ED21183604B6000F9F93 /* CoreGraphics.framework */,
+				A741ED23183604B6000F9F93 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A741ED25183604B6000F9F93 /* KPTimePickerExample */ = {
+			isa = PBXGroup;
+			children = (
+				A741ED5418360532000F9F93 /* KPTimePicker */,
+				A741ED2E183604B6000F9F93 /* KPAppDelegate.h */,
+				A741ED2F183604B6000F9F93 /* KPAppDelegate.m */,
+				A741ED31183604B6000F9F93 /* Main.storyboard */,
+				A741ED34183604B6000F9F93 /* KPViewController.h */,
+				A741ED35183604B6000F9F93 /* KPViewController.m */,
+				A741ED37183604B6000F9F93 /* Images.xcassets */,
+				A741ED26183604B6000F9F93 /* Supporting Files */,
+			);
+			path = KPTimePickerExample;
+			sourceTree = "<group>";
+		};
+		A741ED26183604B6000F9F93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A741ED27183604B6000F9F93 /* KPTimePickerExample-Info.plist */,
+				A741ED28183604B6000F9F93 /* InfoPlist.strings */,
+				A741ED2B183604B6000F9F93 /* main.m */,
+				A741ED2D183604B6000F9F93 /* KPTimePickerExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A741ED5418360532000F9F93 /* KPTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A741ED581836074C000F9F93 /* Categories.h */,
+				A741ED591836074C000F9F93 /* Categories.m */,
+				A741ED5518360532000F9F93 /* KPTimePicker.h */,
+				A741ED5618360532000F9F93 /* KPTimePicker.m */,
+				A741ED5B18361389000F9F93 /* Images */,
+			);
+			name = KPTimePicker;
+			path = ../../KPTimePicker;
+			sourceTree = "<group>";
+		};
+		A741ED5B18361389000F9F93 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A741ED5C18361389000F9F93 /* checkmark_icon_white.png */,
+				A741ED5D18361389000F9F93 /* checkmark_icon_white@2x.png */,
+				A741ED5E18361389000F9F93 /* picker_wheel@2x.png */,
+				A741ED5F18361389000F9F93 /* picker_wheel_ip4.png */,
+				A741ED6018361389000F9F93 /* picker_wheel_ip4@2x.png */,
+				A741ED6118361389000F9F93 /* round_backarrow_big-high.png */,
+				A741ED6218361389000F9F93 /* round_backarrow_big-high@2x.png */,
+				A741ED6318361389000F9F93 /* round_backarrow_big.png */,
+				A741ED6418361389000F9F93 /* round_backarrow_big@2x.png */,
+				A741ED6518361389000F9F93 /* schedule_image_moon-high.png */,
+				A741ED6618361389000F9F93 /* schedule_image_moon-high@2x.png */,
+				A741ED6718361389000F9F93 /* schedule_image_sun-high.png */,
+				A741ED6818361389000F9F93 /* schedule_image_sun-high@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A741ED1B183604B6000F9F93 /* KPTimePickerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A741ED4E183604B6000F9F93 /* Build configuration list for PBXNativeTarget "KPTimePickerExample" */;
+			buildPhases = (
+				A741ED18183604B6000F9F93 /* Sources */,
+				A741ED19183604B6000F9F93 /* Frameworks */,
+				A741ED1A183604B6000F9F93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KPTimePickerExample;
+			productName = KPTimePickerExample;
+			productReference = A741ED1C183604B6000F9F93 /* KPTimePickerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A741ED14183604B6000F9F93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Pihl IT";
+			};
+			buildConfigurationList = A741ED17183604B6000F9F93 /* Build configuration list for PBXProject "KPTimePickerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A741ED13183604B6000F9F93;
+			productRefGroup = A741ED1D183604B6000F9F93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A741ED1B183604B6000F9F93 /* KPTimePickerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A741ED1A183604B6000F9F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A741ED7418361389000F9F93 /* schedule_image_sun-high.png in Resources */,
+				A741ED6B18361389000F9F93 /* picker_wheel@2x.png in Resources */,
+				A741ED6C18361389000F9F93 /* picker_wheel_ip4.png in Resources */,
+				A741ED6D18361389000F9F93 /* picker_wheel_ip4@2x.png in Resources */,
+				A741ED7118361389000F9F93 /* round_backarrow_big@2x.png in Resources */,
+				A741ED6918361389000F9F93 /* checkmark_icon_white.png in Resources */,
+				A741ED38183604B6000F9F93 /* Images.xcassets in Resources */,
+				A741ED7218361389000F9F93 /* schedule_image_moon-high.png in Resources */,
+				A741ED7018361389000F9F93 /* round_backarrow_big.png in Resources */,
+				A741ED7318361389000F9F93 /* schedule_image_moon-high@2x.png in Resources */,
+				A741ED6A18361389000F9F93 /* checkmark_icon_white@2x.png in Resources */,
+				A741ED2A183604B6000F9F93 /* InfoPlist.strings in Resources */,
+				A741ED7518361389000F9F93 /* schedule_image_sun-high@2x.png in Resources */,
+				A741ED6F18361389000F9F93 /* round_backarrow_big-high@2x.png in Resources */,
+				A741ED33183604B6000F9F93 /* Main.storyboard in Resources */,
+				A741ED6E18361389000F9F93 /* round_backarrow_big-high.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A741ED18183604B6000F9F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A741ED36183604B6000F9F93 /* KPViewController.m in Sources */,
+				A741ED5718360532000F9F93 /* KPTimePicker.m in Sources */,
+				A741ED2C183604B6000F9F93 /* main.m in Sources */,
+				A741ED5A1836074C000F9F93 /* Categories.m in Sources */,
+				A741ED30183604B6000F9F93 /* KPAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A741ED28183604B6000F9F93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A741ED29183604B6000F9F93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A741ED31183604B6000F9F93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A741ED32183604B6000F9F93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A741ED4C183604B6000F9F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A741ED4D183604B6000F9F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A741ED4F183604B6000F9F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KPTimePickerExample/KPTimePickerExample-Prefix.pch";
+				INFOPLIST_FILE = "KPTimePickerExample/KPTimePickerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A741ED50183604B6000F9F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KPTimePickerExample/KPTimePickerExample-Prefix.pch";
+				INFOPLIST_FILE = "KPTimePickerExample/KPTimePickerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A741ED17183604B6000F9F93 /* Build configuration list for PBXProject "KPTimePickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A741ED4C183604B6000F9F93 /* Debug */,
+				A741ED4D183604B6000F9F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A741ED4E183604B6000F9F93 /* Build configuration list for PBXNativeTarget "KPTimePickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A741ED4F183604B6000F9F93 /* Debug */,
+				A741ED50183604B6000F9F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A741ED14183604B6000F9F93 /* Project object */;
+}
