@@ -19,7 +19,7 @@ timePicker.delegate = self;
 
 ### Delegate
 
-KPTimePicker has a delegate to the selected date.
+KPTimePicker has a delegate to get the selected date.
 
 ```objc
 @interface ViewController () <KPTimePickerDelegate>
