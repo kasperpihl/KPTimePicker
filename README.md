@@ -1,10 +1,21 @@
 KPTimePicker
 --------------------
+<p align="left"><img src="https://raw.github.com/kasperpihl/KPTimePicker/master/github-assets/kptimepickerscreenshot.png"/></p>
+
 Bringing back the iPod wheel to adjust time in a more delicate manner.
 This is an open-source version of the TimePicker used in [Swipes](http://swipesapp.com) iOS app.
 
+## Usage
+Include KPTimePicker folder to your project
+```objc
+#import "KPTimePicker.h"
+KPTimePicker *timePicker = [[KPTimePicker alloc] init];
+timePicker.delegate = self;
+[view addSubview:timePicker];
+```
+
 ## Demo
-<p align="center"><img src="https://raw.github.com/kasperpihl/KPTimePicker/master/github-assets/kptimepickerdemo.gif"/></p>
+<p align="left"><img src="https://raw.github.com/kasperpihl/KPTimePicker/master/github-assets/kptimepickerdemo.gif"/></p>
 
 ### Delegate
 
@@ -32,6 +43,6 @@ KPTimePicker has a delegate to the selected date.
 - ARC
 
 ## Contact
-
+Pull-request and feedback is highly appreciated :-)
 Kasper Pihl Tornøe
 - http://twitter.com/tornoe
