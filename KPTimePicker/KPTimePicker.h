@@ -11,6 +11,7 @@
 /* Returns selected date -- date is nil if back is pressed */
 -(void)timePicker:(KPTimePicker*)timePicker selectedDate:(NSDate *)date;
 @optional
+/* Get's called every time the date changes - used for customizing the labels */
 -(NSString*)timePicker:(KPTimePicker*)timePicker titleForDate:(NSDate *)time;
 -(NSString*)timePicker:(KPTimePicker*)timePicker clockForDate:(NSDate *)time;
 @end

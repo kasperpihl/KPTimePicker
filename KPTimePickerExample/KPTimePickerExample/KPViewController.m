@@ -12,16 +12,24 @@
 @interface KPViewController () <KPTimePickerDelegate, UIGestureRecognizerDelegate>
 @property (nonatomic,strong) KPTimePicker *timePicker;
 @property (nonatomic,weak) IBOutlet UIButton *setTimeButton;
+@property (nonatomic,weak) IBOutlet UILabel *statusLabel;
 @property (nonatomic,strong) UILongPressGestureRecognizer *longPressGestureRecognizer;
 @property (nonatomic,strong) UIPanGestureRecognizer *panRecognizer;
 @end
 
 @implementation KPViewController
 -(void)timePicker:(KPTimePicker *)timePicker selectedDate:(NSDate *)date{
-    if(!date){
-        [self show:NO timePickerAnimated:YES];
+    [self show:NO timePickerAnimated:YES];
+    
+    if(date){
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setLocale:[NSLocale currentLocale]];
+        [dateFormatter setDateStyle:NSDateFormatterNoStyle];
+        [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+        self.statusLabel.text = [[dateFormatter stringFromDate:date] lowercaseString];;
     }
 }
+
 -(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
     if([otherGestureRecognizer isEqual:self.panRecognizer] && !self.timePicker) return NO;
     return YES;
@@ -33,7 +41,7 @@
 }
 -(void)show:(BOOL)show timePickerAnimated:(BOOL)animated{
     if(show){
-        
+        self.timePicker.pickingDate = [NSDate date];
         [self.view addSubview:self.timePicker];
     }
     else{
@@ -52,9 +60,13 @@
     [super viewDidLoad];
     [self setNeedsStatusBarAppearanceUpdate];
     self.view.backgroundColor = color(36,40,46,1);
+    
+    self.setTimeButton.layer.cornerRadius = 10;
+    self.setTimeButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.setTimeButton.layer.borderWidth = 2;
+    
     self.timePicker = [[KPTimePicker alloc] initWithFrame:self.view.bounds];
     self.timePicker.delegate = self;
-    self.timePicker.pickingDate = [NSDate date];
     self.timePicker.minimumDate = [self.timePicker.pickingDate dateAtStartOfDay];
     self.timePicker.maximumDate = [[[self.timePicker.pickingDate dateByAddingMinutes:(60*24)] dateAtStartOfDay] dateBySubtractingMinutes:5];
     
