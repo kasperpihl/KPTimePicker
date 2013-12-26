@@ -58,7 +58,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setNeedsStatusBarAppearanceUpdate];
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]){
+        [self setNeedsStatusBarAppearanceUpdate];
+    }
     self.view.backgroundColor = color(36,40,46,1);
     
     self.setTimeButton.layer.cornerRadius = 10;
